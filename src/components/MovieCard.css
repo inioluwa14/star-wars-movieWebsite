@@ -1,0 +1,83 @@
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family:  'Open Sans', sans-serif;    ;
+}
+.star-wars-logo{
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 5em;
+    color: rgb(255, 232, 31);
+}
+.loading-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30vmin;
+    font-size: 2em;
+    /* background-color: skyblue; */
+    width: 5%;
+    /* height: 10vmin; */
+    pointer-events: none;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+}
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .loading-icon {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie-container{
+    width: 23%;
+    padding: 2rem;
+    margin: 2em 1em;
+    background-color: rgb(29, 25, 25);
+    border-radius: 0.5em;
+}
+.movie-container:nth-child(odd){
+    background: url("https://plus.unsplash.com/premium_photo-1661284807863-89df07cde422?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-blend-mode: darken;
+    /* opacity: ; */
+    
+}
+.movie-container:nth-child(even){
+    background:url("https://plus.unsplash.com/premium_photo-1664303113426-b3c038dbefd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vdmllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+.movie-container:hover{
+    transition:all 0.3s ease 0s;
+    box-shadow: 1px 1px 5px 5px skyblue;
+}
+.movie-description{
+    padding: 1em 0;
+}
+.more-button{
+    border-top: 2px solid red;
+    padding: 1em 0;
+}
+.more-button a{
+    color: rgb(255, 232, 31);
+    text-decoration: none;
+    cursor: pointer;
+}
