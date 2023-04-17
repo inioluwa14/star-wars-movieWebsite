@@ -25,7 +25,7 @@ body{
     width: 5%;
     /* height: 10vmin; */
     pointer-events: none;
-    border: 2px solid skyblue;
+    border: 2px solid rgb(255, 232, 31);
     border-radius: 20px;
 }
   
