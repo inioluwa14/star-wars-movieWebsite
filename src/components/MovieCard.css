@@ -81,3 +81,15 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+
+@media only screen and (max-width:768px) 
+{
+  .movie{
+    display: block;
+    margin: 0 auto;
+    
+}
+  .movie-container{
+    width: 75%;
+  }
+}
