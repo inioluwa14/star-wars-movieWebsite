@@ -45,6 +45,7 @@ const MovieCard = () => {
           return (
             
           <div className='movie-container' key={item.episode_id}>
+            <div class="movie-text">
             <div className='movie-title'>
               <h3 className='title'>{item.title}</h3>
               <span className='date-text'>{
@@ -57,6 +58,7 @@ const MovieCard = () => {
               <p className='more-button'>
                 <a href='##'>More Info</a>
               </p>
+            </div>
             </div>
             )
           })
