@@ -32,6 +32,7 @@ const MovieCard = () => {
   },[])
 
   return (
+    
     <div>
       <h1 className='star-wars-logo'>STAR WARS</h1>
       {loading && <div className='loading-icon'>
@@ -46,7 +47,9 @@ const MovieCard = () => {
           <div className='movie-container' key={item.episode_id}>
             <div className='movie-title'>
               <h3 className='title'>{item.title}</h3>
-              <span className='date-text'>{item.release_date}</span>
+              <span className='date-text'>{
+                new Date(item.release_date).toLocaleDateString("en-US", {month:'long', day:'numeric', year:'numeric'})
+              }</span>
             </div>
             <p className='movie-description'>
                 {item.opening_crawl.substring(0,260)}...
