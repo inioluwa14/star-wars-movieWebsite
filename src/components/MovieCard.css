@@ -50,7 +50,7 @@ body{
     justify-content: center;
 }
 .movie-text{
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(5px);
   /* width: 100%;  */
   padding: 2rem;
 }
